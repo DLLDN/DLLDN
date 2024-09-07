@@ -22,7 +22,7 @@ Property rights measure the strength of a country's legal protection for private
 The following research questions will be used for this project:-
 
 - What is the difference between the overall average score for countries on the Index of Economic Freedom and the average score for countries across the four AML indicators?
-- What are top 20 high-risk countries for AML and their lowest scoring AML Indicator?
-- Which top 10 countries have the largest discrepancy between their overall Index of Economic Freedom score and their average AML score?
-- What indicator is contributing to that? 
+- What are top 10 high-risk countries for AML and their lowest scoring AML Indicator?
+- Which top 10 countries have the largest discrepancy between their overall Index of Economic Freedom score and their average AML score, their lowest scoring AML indicator?
+- What regions of the world contain the countries who have AML risk?
 
