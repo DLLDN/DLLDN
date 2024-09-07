@@ -17,4 +17,12 @@ funds, contributing to a more effective and responsive financial system in comba
 
 Property rights measure the strength of a country's legal protection for private ownership, supporting AML efforts by making it harder to conceal illicit assets and enabling authorities to trace and seize criminal proceeds. This factor fosters a legal environment that is less conducive to money laundering activities and more supportive of effective AML measures by promoting financial transparency.
 
+# Research Questions
+
+The following research questions will be used for this project:-
+
+- What is the difference between the overall average score for countries on the Index of Economic Freedom and the average score for countries across the four AML indicators?
+- What are top 20 high-risk countries for AML and their lowest scoring AML Indicator?
+- Which top 10 countries have the largest discrepancy between their overall Index of Economic Freedom score and their average AML score?
+- What indicator is contributing to that? 
 
