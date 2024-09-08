@@ -73,6 +73,9 @@ LIMIT 10
 ```
 <img width="1132" alt="Screenshot 2024-09-08 at 19 51 02" src="https://github.com/user-attachments/assets/f99f0326-4db1-479d-abfd-a778a73921a6">
 
+<img width="1186" alt="Screenshot 2024-09-08 at 21 03 28" src="https://github.com/user-attachments/assets/8c3b649f-facd-463f-b785-2f57b523d8cd">
+
+
 
 
 
