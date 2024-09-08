@@ -70,7 +70,7 @@ WHERE
 ORDER BY 
     low_score_indicator
 LIMIT 10
-
+```
 
 
 
