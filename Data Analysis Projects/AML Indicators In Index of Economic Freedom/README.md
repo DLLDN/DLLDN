@@ -73,9 +73,13 @@ LIMIT 10
 ```
 <img width="1132" alt="Screenshot 2024-09-08 at 19 51 02" src="https://github.com/user-attachments/assets/f99f0326-4db1-479d-abfd-a778a73921a6">
 
-<img width="1186" alt="Screenshot 2024-09-08 at 21 03 28" src="https://github.com/user-attachments/assets/8c3b649f-facd-463f-b785-2f57b523d8cd">
+<img width="1150" alt="Screenshot 2024-09-08 at 21 03 28" src="https://github.com/user-attachments/assets/013c06d6-0539-4d8f-8143-ec0a155d2f4e">
 
+<img width="843" alt="Screenshot 2024-09-08 at 21 18 53" src="https://github.com/user-attachments/assets/19d8d050-a9e6-4da9-9da8-d790346d9637">
 
+<img width="918" alt="Screenshot 2024-09-08 at 21 26 22" src="https://github.com/user-attachments/assets/3276f68b-d744-4330-86ad-3f96abe3ca8d">
+
+<img width="578" alt="Screenshot 2024-09-08 at 21 23 59" src="https://github.com/user-attachments/assets/d2883ba0-52f2-4b3e-9611-93deadecd6f6">
 
 
 
