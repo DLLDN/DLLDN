@@ -32,7 +32,7 @@ The following research questions will be used for this project:-
 
 ```sql
 SELECT 
-    country, 
+    Country, 
     Government_Integrity, 
     Judicial_Effectiveness, 
     Financial_Freedom, 
@@ -71,6 +71,7 @@ ORDER BY
     low_score_indicator
 LIMIT 10
 ```
+<img width="1132" alt="Screenshot 2024-09-08 at 19 51 02" src="https://github.com/user-attachments/assets/f99f0326-4db1-479d-abfd-a778a73921a6">
 
 
 
