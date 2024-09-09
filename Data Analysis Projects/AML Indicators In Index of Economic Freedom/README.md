@@ -210,6 +210,6 @@ It is evidently clear that Sub-Saharan Africa is a major problem for AML, for bo
 
 # Changes to dataset and data license
 
-For the purpose of the analysis I have edited column names in the dataset to assist with querying, and have created aggregated data as part of this analysis. The data license can be found in the folder. 
+For the purpose of the analysis I have edited column names in the dataset to assist with querying, and have created aggregated data as part of this analysis. The license can be found in the project folder. 
 
 
