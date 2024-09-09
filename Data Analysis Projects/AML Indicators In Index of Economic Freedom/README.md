@@ -7,9 +7,13 @@ For this data analysis project, I have conducted SQL subqueries using Big Query 
 The Index of Economic Freedom (IEF) is an annual ranking of countries based on their degree of economic freedom. It is published annually by the Heritage Foundation and Wall Street Journal. The interpretation of the IEF score is as follows:-
 
 80 – 100: Free - Countries in this range have high levels of economic freedom, characterized by strong property rights, low corruption, and efficient regulatory environments.
+
 70 – 79.9: Mostly Free - These countries have a good level of economic freedom, with some regulatory and policy constraints.
+
 60 – 69.9: Moderately Free - Countries in this range have moderate economic freedom, with noticeable regulatory and policy challenges.
+
 50 – 59.9: Mostly Unfree - These countries face significant barriers to economic freedom, often due to regulatory inefficiencies and corruption.
+
 0 – 49.9: Repressed - Countries in this range have very low economic freedom, with pervasive government intervention and weak property rights.
 
 # Anti-Money Laundering
