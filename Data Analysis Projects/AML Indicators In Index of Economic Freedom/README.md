@@ -98,8 +98,43 @@ Using Tableau we can visualise the results of this query:-
 As you can see North Korea scores very poorly for Government Integrity, Judicial Effectiveness, Financial Freedom and Property Rights, suggesting that there major barriers to Economnic Freedom and serious issues with AML regulations in place there. For each of the top 10 countries, the lowest scoring indicator was Financial Freedom, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. 
 
 # Anomalies between Overall score and AML score
-
-
+So far we have looked at the highest-risk AML countries, but another query that can be performed is looking at the top 10 countries that have an above average Economic Freedom index score but below average AML score, with their lowest scoring AML indicator also shown. The query below finds this information and shows the countries with the biggest difference between the two figures:-  
+```sql
+WITH Averages AS (
+    SELECT AVG(Overall_Score) AS avg_efi_score,
+           AVG((Government_Integrity + Judicial_Effectiveness + Financial_Freedom + Property_Rights) / 4) AS avg_aml_score
+    FROM `economic-freedom-index.EFI.2024_Data`
+    WHERE Overall_Score IS NOT NULL AND Government_Integrity IS NOT NULL
+      AND Judicial_Effectiveness IS NOT NULL AND Financial_Freedom IS NOT NULL
+      AND Property_Rights IS NOT NULL
+),
+CountryScores AS (
+    SELECT country, Overall_Score,
+           ROUND((Government_Integrity + Judicial_Effectiveness + Financial_Freedom + Property_Rights) / 4, 2) AS combined_aml_score,
+           ROUND(Government_Integrity, 2) AS Government_Integrity,
+           ROUND(Judicial_Effectiveness, 2) AS Judicial_Effectiveness,
+           ROUND(Financial_Freedom, 2) AS Financial_Freedom,
+           ROUND(Property_Rights, 2) AS Property_Rights
+    FROM `economic-freedom-index.EFI.2024_Data`
+    WHERE Overall_Score IS NOT NULL AND Government_Integrity IS NOT NULL
+      AND Judicial_Effectiveness IS NOT NULL AND Financial_Freedom IS NOT NULL
+      AND Property_Rights IS NOT NULL
+)
+SELECT country, Overall_Score, combined_aml_score,
+       Government_Integrity, Judicial_Effectiveness, Financial_Freedom, Property_Rights,
+       CASE
+           WHEN Government_Integrity <= Judicial_Effectiveness AND Government_Integrity <= Financial_Freedom AND Government_Integrity <= Property_Rights THEN 'Government Integrity'
+           WHEN Judicial_Effectiveness <= Government_Integrity AND Judicial_Effectiveness <= Financial_Freedom AND Judicial_Effectiveness <= Property_Rights THEN 'Judicial Effectiveness'
+           WHEN Financial_Freedom <= Government_Integrity AND Financial_Freedom <= Judicial_Effectiveness AND Financial_Freedom <= Property_Rights THEN 'Financial Freedom'
+           ELSE 'Property Rights'
+       END AS lowest_indicator,
+       LEAST(Government_Integrity, Judicial_Effectiveness, Financial_Freedom, Property_Rights) AS lowest_aml_score
+FROM CountryScores, Averages
+WHERE Overall_Score > avg_efi_score AND combined_aml_score < avg_aml_score
+LIMIT 10;
+```
+This query has been visualised in tableau below:-
+<img width="578" alt="Screenshot 2024-09-08 at 21 23 59" src="https://github.com/user-attachments/assets/d2883ba0-52f2-4b3e-9611-93deadecd6f6">
 
 <img width="1150" alt="Screenshot 2024-09-08 at 21 03 28" src="https://github.com/user-attachments/assets/013c06d6-0539-4d8f-8143-ec0a155d2f4e">
 
@@ -107,7 +142,7 @@ As you can see North Korea scores very poorly for Government Integrity, Judicial
 
 <img width="918" alt="Screenshot 2024-09-08 at 21 26 22" src="https://github.com/user-attachments/assets/3276f68b-d744-4330-86ad-3f96abe3ca8d">
 
-<img width="578" alt="Screenshot 2024-09-08 at 21 23 59" src="https://github.com/user-attachments/assets/d2883ba0-52f2-4b3e-9611-93deadecd6f6">
+
 
 
 
