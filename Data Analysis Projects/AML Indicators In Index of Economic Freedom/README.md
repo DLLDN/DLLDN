@@ -47,7 +47,7 @@ FROM `economic-freedom-index.EFI.2024_Data`
 WHERE Government_Integrity IS NOT NULL AND Judicial_Effectiveness IS NOT NULL
   AND Financial_Freedom IS NOT NULL AND Property_Rights IS NOT NULL;
 ```
-This query resulted in an average AML score of 49.55 and includes 177 countries who provided all the 4 indicators. This average is below the Index of Economic Freedom, with a difference of 9.09. This may suggest that AML procedures in many countries around the world are ineffective. We can explore this further by analysing the high-risk countries.
+This query resulted in an average AML score of 49.55 and includes 177 countries who provided all the 4 indicators. This average is below the IEF, with a difference of 9.09. This may suggest that AML procedures in many countries around the world are ineffective. We can explore this further by analysing the high-risk countries.
 
 # High-Risk Countries
 
@@ -95,11 +95,11 @@ LIMIT 10
 ```
 Using Tableau we can visualise the results of this query:-
 <img width="1132" alt="Screenshot 2024-09-08 at 19 51 02" src="https://github.com/user-attachments/assets/f99f0326-4db1-479d-abfd-a778a73921a6">
-As you can see North Korea scores very poorly for Government Integrity, Judicial Effectiveness, Financial Freedom and Property Rights, suggesting that there major barriers to Economnic Freedom and serious issues with AML regulations in place there. For each of the top 10 countries, the lowest scoring indicator was Financial Freedom, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. 
+As you can see North Korea scores very poorly for Government Integrity, Judicial Effectiveness, Financial Freedom and Property Rights, suggesting that there major barriers to Economic Freedom and serious issues with AML regulations in place there. For each of the top 10 countries, the lowest scoring indicator was Financial Freedom.
 
 # Anomalies Between Overall Score and AML Score
 
-So far we have looked at the highest-risk AML countries, but another query that can be performed is looking at the top 10 countries that have an above average Economic Freedom index score but below average AML score, with their lowest scoring AML indicator also shown. The query below finds this information and shows the countries with the biggest difference between the two figures:-  
+So far we have looked at the highest-risk AML countries, but another query that can be performed is looking at the top 10 countries that have an above average IEF score but below average AML score, with their lowest scoring AML indicator also shown. The query below finds this information and shows the countries with the biggest difference between the two figures:-  
 ```sql
 WITH Averages AS (
     SELECT AVG(Overall_Score) AS avg_efi_score,
@@ -138,7 +138,7 @@ This query has been visualised using Tableau below:-
 
 <img width="578" alt="Screenshot 2024-09-08 at 21 23 59" src="https://github.com/user-attachments/assets/d2883ba0-52f2-4b3e-9611-93deadecd6f6">
 
-The table shows the lowest scoring indicator for each of the top 10 countries and the score of that indicator. There is a greater variety of indicators which these countries perform particuarly poorly at with each of the four indicators featuring across the table, with Judicial Effectiveness being the most popular lowest-scoring indicator. This may suggest that these countries have poor enforcement of AML laws and regulations despite having good overall Economic Freedom.  
+The table shows the lowest scoring indicator for each of the top 10 countries and the score of that indicator. There is a greater variety of indicators which these countries perform particuarly poorly at with each of the four indicators featuring across the table, with Judicial Effectiveness being the most popular lowest-scoring indicator. 
 
 # AML Risk for Regions of the World
 
@@ -169,7 +169,7 @@ The treemap below visualises the results of the query:-
 
 As you can see Sub-Saharan Africa has the most countries falling below the AML average with 41, and Europe has the least with 8. 
 
-The following query gives the number of high-risk AML countries that fall below the Index of Economic Freedom average and AML average:-
+The following query gives the number of high-risk AML countries that fall below the IEF average and AML average:-
 ```sql
 WITH Averages AS (
     SELECT AVG((Government_Integrity + Judicial_Effectiveness + Financial_Freedom + Property_Rights) / 4) AS avg_aml_score,
@@ -200,7 +200,13 @@ The pie chart shows that Sub-Saharan Africa has the highest percentage with 48.7
 
 # Summary and Findings
 
-The analysis performed shows that AML indicators are bringing down the IEF averages for most countries around the world, and this is a concerning issue. Financial Freedom poses the biggest barrier for the highest risk AML countries. It is also clear that even for countries that perform well above the IEF average have major shortcomings in their AML indicators, in particular Judicial Effectiveness, and suggests regulatory procedures and AML legislation is severely lacking. The array of low scoring indicators amongst these countries is more complex and nuanced. However, as these countries perform good overall on the IEF, it offers scope and encouragement that AML measures can be improved. It is evidently clear that Sub-Saharan Africa is a major problem for AML, for both the number of countries performing below the average AML score and the percentage being high-risk. It appears to be a complex socio-economic and cultural problem, and appears to be a very challenging task to enforce and improve AML measures in that part of the world.  
+The analysis performed shows that AML indicators are bringing down the IEF averages for most countries around the world, and this is a concerning issue. 
+
+Financial Freedom poses the biggest barrier for the highest risk AML countries, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. 
+
+Countries that perform well above the IEF average but below the AML average have major shortcomings in Judicial Effectiveness, and suggests regulatory procedures and AML legislation is severely lacking. The array of low scoring indicators amongst these countries is more complex and nuanced. However, as these countries perform good overall on the IEF, it offers scope and encouragement that AML measures can be improved. 
+
+It is evidently clear that Sub-Saharan Africa is a major problem for AML, for both the number of countries performing below the average AML score and the percentage being high-risk. It would a very challenging task to enforce and improve AML measures in that part of the world.  
 
 
 
