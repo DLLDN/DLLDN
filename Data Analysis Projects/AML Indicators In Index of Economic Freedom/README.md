@@ -30,6 +30,20 @@ The following research questions will be used for this project:-
 - Which top 10 countries have the largest discrepancy between their overall Index of Economic Freedom score and their average AML score, their lowest scoring AML indicator?
 - What regions of the world contain the countries who have AML risk?
 
+# Average Scores
+
+The following query finds the average Index of Economic Freedom score across all of the 184 countries in the dataset:-
+```sql
+SELECT ROUND(AVG(Overall_Score), 2) AS avg_fei_score
+FROM `economic-freedom-index.EFI.2024_Data`
+WHERE Overall_Score IS NOT NULL;
+```
+This query resulted in an average score of 58.64, which suggests that many countries are mostly unfree and face significant barriers to economic freedom. 
+
+The next query finds the average score of the four AML indicators combined. For the purpose of this query any country with null values for any of those indicators has been excluded. 
+
+
+
 ```sql
 SELECT 
     Country, 
