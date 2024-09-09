@@ -4,7 +4,22 @@ For this data analysis project, I have conducted SQL subqueries using Big Query 
 
 # Index of Economic Freedom
 
-The Index of Economic Freedom (IEF) is an annual ranking of countries based on their degree of economic freedom. It is published annually by the Heritage Foundation and Wall Street Journal.
+The Index of Economic Freedom (IEF) is an annual ranking of countries based on their degree of economic freedom. It is published annually by the Heritage Foundation and Wall Street Journal. The interpretation of the IEF score is as follows:-
+
+80–100: Free
+Countries in this range have high levels of economic freedom, characterized by strong property rights, low corruption, and efficient regulatory environments.
+
+70–79.9: Mostly Free
+These countries have a good level of economic freedom, with some regulatory and policy constraints.
+
+60–69.9: Moderately Free
+Countries in this range have moderate economic freedom, with noticeable regulatory and policy challenges.
+
+50–59.9: Mostly Unfree
+These countries face significant barriers to economic freedom, often due to regulatory inefficiencies and corruption.
+
+0–49.9: Repressed
+Countries in this range have very low economic freedom, with pervasive government intervention and weak property rights.
 
 # Anti-Money Laundering
 
@@ -204,7 +219,7 @@ The analysis performed shows that AML indicators are bringing down the IEF avera
 
 Financial Freedom poses the biggest barrier for the highest risk AML countries, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. 
 
-Countries that perform well above the IEF average but below the AML average have major shortcomings in Judicial Effectiveness, and suggests regulatory procedures and AML legislation is severely lacking. However, as these countries perform good overall on the IEF, it offers scope and encouragement that AML measures can be improved. 
+Countries that perform well above the IEF average but below the AML average have major shortcomings in judicial effectiveness, and suggests regulatory procedures and AML legislation is severely lacking. However, as these countries perform good overall on the IEF, it offers scope and encouragement that AML measures can be improved. 
 
 It is evidently clear that Sub-Saharan Africa is a major problem for AML, for both the number of countries performing below the average AML score and the percentage being high-risk. It would be a very challenging task to enforce and improve AML measures in that part of the world.  
 
