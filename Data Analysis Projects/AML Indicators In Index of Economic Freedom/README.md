@@ -16,8 +16,7 @@ Judicial effectiveness gauges the efficiency and fairness of a legal system in e
 
 Government integrity assesses corruption levels and transparency in governance, with higher integrity supporting anti-money laundering efforts by reducing official corruption and promoting effective AML regulation enforcement. This factor is essential for creating an environment that discourages money laundering and enhances the effectiveness of AML measures by building trust in government institutions to combat financial crimes.
 
-Financial freedom evaluates banking efficiency and independence from government control, supporting AML efforts by promoting transparency and enabling robust compliance programs in the financial sector. This factor facilitates international cooperation in tracking illicit 
-funds, contributing to a more effective and responsive financial system in combating money laundering.
+Financial freedom evaluates banking efficiency and independence from government control, supporting AML efforts by promoting transparency and enabling robust compliance programs in the financial sector. This factor facilitates international cooperation in tracking illicit funds, contributing to a more effective and responsive financial system in combating money laundering.
 
 Property rights measure the strength of a country's legal protection for private ownership, supporting AML efforts by making it harder to conceal illicit assets and enabling authorities to trace and seize criminal proceeds. This factor fosters a legal environment that is less conducive to money laundering activities and more supportive of effective AML measures by promoting financial transparency.
 
@@ -48,7 +47,7 @@ FROM `economic-freedom-index.EFI.2024_Data`
 WHERE Government_Integrity IS NOT NULL AND Judicial_Effectiveness IS NOT NULL
   AND Financial_Freedom IS NOT NULL AND Property_Rights IS NOT NULL;
 ```
-This query resulted in an average AML score of 49.55 and includes 177 countries who provided all the 4 indicators. This average is below the Index of Economic Freedom, with a difference of 9.09. This may suggest that AML procedures in many countries around the world are ineffective. We can explore this future by analysing the high-risk countries.
+This query resulted in an average AML score of 49.55 and includes 177 countries who provided all the 4 indicators. This average is below the Index of Economic Freedom, with a difference of 9.09. This may suggest that AML procedures in many countries around the world are ineffective. We can explore this further by analysing the high-risk countries.
 
 # High-Risk Countries
 
@@ -97,7 +96,7 @@ LIMIT 10
 Using Tableau we can visualise the results of this query:-
 <img width="1132" alt="Screenshot 2024-09-08 at 19 51 02" src="https://github.com/user-attachments/assets/f99f0326-4db1-479d-abfd-a778a73921a6">
 
-
+As you can see North Korea scores very poorly for Government Integrity, Judicial Effectiveness, Financial Freedom and Property Rights, suggesting that there major barriers to Economnic Freedom and serious issues with AML regulations in place there. For each of the top 10 countries, the lowest scoring indicator was Financial Freedom, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. 
 
 
 <img width="1150" alt="Screenshot 2024-09-08 at 21 03 28" src="https://github.com/user-attachments/assets/013c06d6-0539-4d8f-8143-ec0a155d2f4e">
