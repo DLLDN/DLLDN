@@ -1,6 +1,6 @@
 # Project Objective
 
-For this data analysis project, I have conducted SQL subqueries using Big Query and created visualisations in Tableau to analyse countries and regions who are potentially high-risk in regards to Anti-Money Laundering procedures, using the Index of Economic Freedom 2023 as my dataset. The link to the dataset can be found here on [Kaggle](https://www.kaggle.com/datasets/mlippo/freedom-economic-index) 
+For this data analysis project, I have conducted SQL subqueries using Big Query and created visualisations in Tableau to analyse countries and regions who are potentially high-risk and fall below the average score in regards to Anti-Money Laundering procedures, using the Index of Economic Freedom 2023 as my dataset. The link to the dataset can be found here on [Kaggle](https://www.kaggle.com/datasets/mlippo/freedom-economic-index) 
 
 # Index of Economic Freedom
 
