@@ -48,12 +48,11 @@ FROM `economic-freedom-index.EFI.2024_Data`
 WHERE Government_Integrity IS NOT NULL AND Judicial_Effectiveness IS NOT NULL
   AND Financial_Freedom IS NOT NULL AND Property_Rights IS NOT NULL;
 ```
-This query resulted in an average AML score of 49.55 and includes 177 countries who provided all the 4 indicators. This average is below the Index of Economic Freedom, with a difference of 9.09. This may suggest that AML procedures in many countries around the world are ineffective. 
+This query resulted in an average AML score of 49.55 and includes 177 countries who provided all the 4 indicators. This average is below the Index of Economic Freedom, with a difference of 9.09. This may suggest that AML procedures in many countries around the world are ineffective. We can explore this future by analysing the high-risk countries.
 
-# High Risk Countries
+# High-Risk Countries
 
-
-
+The query below finds the top 10 high-risk countries in the world based on their AML scores across the four indicators.
 ```sql
 SELECT 
     Country, 
@@ -95,7 +94,11 @@ ORDER BY
     low_score_indicator
 LIMIT 10
 ```
+Using Tableau we can visualise the results of this query:-
 <img width="1132" alt="Screenshot 2024-09-08 at 19 51 02" src="https://github.com/user-attachments/assets/f99f0326-4db1-479d-abfd-a778a73921a6">
+
+
+
 
 <img width="1150" alt="Screenshot 2024-09-08 at 21 03 28" src="https://github.com/user-attachments/assets/013c06d6-0539-4d8f-8143-ec0a155d2f4e">
 
