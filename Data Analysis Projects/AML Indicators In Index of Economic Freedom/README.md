@@ -204,7 +204,7 @@ The analysis performed shows that AML indicators are bringing down the IEF avera
 
 Financial Freedom poses the biggest barrier for the highest risk AML countries, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. 
 
-Countries that perform well above the IEF average but below the AML average have major shortcomings in Judicial Effectiveness, and suggests regulatory procedures and AML legislation is severely lacking. The array of low scoring indicators amongst these countries is more complex and nuanced. However, as these countries perform good overall on the IEF, it offers scope and encouragement that AML measures can be improved. 
+Countries that perform well above the IEF average but below the AML average have major shortcomings in Judicial Effectiveness, and suggests regulatory procedures and AML legislation is severely lacking. However, as these countries perform good overall on the IEF, it offers scope and encouragement that AML measures can be improved. 
 
 It is evidently clear that Sub-Saharan Africa is a major problem for AML, for both the number of countries performing below the average AML score and the percentage being high-risk. It would be a very challenging task to enforce and improve AML measures in that part of the world.  
 
