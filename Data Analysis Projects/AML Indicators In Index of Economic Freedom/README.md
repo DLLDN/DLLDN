@@ -140,10 +140,32 @@ This query has been visualised using Tableau below:-
 
 The table shows the lowest scoring indicator for each of the top 10 countries and the score of that indicator. There is a greater variety of indicators which these countries perform particuarly poorly at with each of the four indicators featuring across the table, with Judicial Effectiveness being the most popular lowest-scoring indicator. This may suggest that these countries have poor enforcement of AML laws and regulations despite having good overall Economic Freedom.  
 
+# AML Risk for Regions of the World
 
-
-
+The following query calculates the average AML score and counts the number of countries in each region with scores below the average:-
+```sql
+WITH Averages AS (
+    SELECT AVG((Government_Integrity + Judicial_Effectiveness + Financial_Freedom + Property_Rights) / 4) AS avg_aml_score
+    FROM `economic-freedom-index.EFI.2024_Data`
+    WHERE Government_Integrity IS NOT NULL AND Judicial_Effectiveness IS NOT NULL
+      AND Financial_Freedom IS NOT NULL AND Property_Rights IS NOT NULL
+),
+BelowAverage AS (
+    SELECT Region, country,
+           (Government_Integrity + Judicial_Effectiveness + Financial_Freedom + Property_Rights) / 4 AS combined_aml_score
+    FROM `economic-freedom-index.EFI.2024_Data`
+    WHERE Government_Integrity IS NOT NULL AND Judicial_Effectiveness IS NOT NULL
+      AND Financial_Freedom IS NOT NULL AND Property_Rights IS NOT NULL
+)
+SELECT Region, COUNT(country) AS num_countries_below_avg
+FROM BelowAverage, Averages
+WHERE combined_aml_score < avg_aml_score
+GROUP BY Region;
+```
+The treemap below visualises the results of the query:-
 <img width="843" alt="Screenshot 2024-09-08 at 21 18 53" src="https://github.com/user-attachments/assets/19d8d050-a9e6-4da9-9da8-d790346d9637">
+
+
 
 <img width="918" alt="Screenshot 2024-09-08 at 21 26 22" src="https://github.com/user-attachments/assets/3276f68b-d744-4330-86ad-3f96abe3ca8d">
 
