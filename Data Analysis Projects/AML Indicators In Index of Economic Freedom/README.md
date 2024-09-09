@@ -95,7 +95,6 @@ LIMIT 10
 ```
 Using Tableau we can visualise the results of this query:-
 <img width="1132" alt="Screenshot 2024-09-08 at 19 51 02" src="https://github.com/user-attachments/assets/f99f0326-4db1-479d-abfd-a778a73921a6">
-
 As you can see North Korea scores very poorly for Government Integrity, Judicial Effectiveness, Financial Freedom and Property Rights, suggesting that there major barriers to Economnic Freedom and serious issues with AML regulations in place there. For each of the top 10 countries, the lowest scoring indicator was Financial Freedom, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. 
 
 
