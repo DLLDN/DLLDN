@@ -20,7 +20,7 @@ The Index of Economic Freedom (IEF) is an annual ranking of countries based on t
 
 Anti-Money Laundering (AML) encompasses laws, regulations, and procedures aimed at preventing the disguise of illegally obtained funds as legitimate income. Its primary objectives are to detect, report, and prevent money laundering activities that conceal the illicit origin, nature, or ownership of funds. Of the 12 indicators in the IEF, 4 strongly relate to AML – Judicial Effectiveness, Government Integrity, Financial Freedom, and Property Rights.
 
-# The Four Indicators
+# The Four AML Indicators
 
 Judicial effectiveness gauges the efficiency and fairness of a legal system in enforcing laws, including those related to anti-money laundering. A strong, independent judiciary is crucial for combating money laundering through fair trials, upholding AML laws, and facilitating asset seizures, thereby effectively prosecuting financial crimes and enforcing AML regulations.
 
