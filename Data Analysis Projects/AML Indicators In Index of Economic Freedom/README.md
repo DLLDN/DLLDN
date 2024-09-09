@@ -135,11 +135,9 @@ LIMIT 10;
 ```
 This query has been visualised in tableau below:-
 
-
-
-
-
 <img width="578" alt="Screenshot 2024-09-08 at 21 23 59" src="https://github.com/user-attachments/assets/d2883ba0-52f2-4b3e-9611-93deadecd6f6">
+The table shows the lowest scoring indicator for each of the top 10 countries and the score of that indicator. There is a greater variety of indicators which these countries perform particuarly poorly at with each of the four indicators featuring across the table. 
+
 
 <img width="1150" alt="Screenshot 2024-09-08 at 21 03 28" src="https://github.com/user-attachments/assets/013c06d6-0539-4d8f-8143-ec0a155d2f4e">
 
