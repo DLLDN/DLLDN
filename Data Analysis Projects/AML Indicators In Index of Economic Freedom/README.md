@@ -98,6 +98,7 @@ Using Tableau we can visualise the results of this query:-
 As you can see North Korea scores very poorly for Government Integrity, Judicial Effectiveness, Financial Freedom and Property Rights, suggesting that there major barriers to Economnic Freedom and serious issues with AML regulations in place there. For each of the top 10 countries, the lowest scoring indicator was Financial Freedom, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. 
 
 # Anomalies Between Overall Score and AML Score
+
 So far we have looked at the highest-risk AML countries, but another query that can be performed is looking at the top 10 countries that have an above average Economic Freedom index score but below average AML score, with their lowest scoring AML indicator also shown. The query below finds this information and shows the countries with the biggest difference between the two figures:-  
 ```sql
 WITH Averages AS (
@@ -133,11 +134,11 @@ FROM CountryScores, Averages
 WHERE Overall_Score > avg_efi_score AND combined_aml_score < avg_aml_score
 LIMIT 10;
 ```
-This query has been visualised in tableau below:-
+This query has been visualised using Tableau below:-
 
 <img width="578" alt="Screenshot 2024-09-08 at 21 23 59" src="https://github.com/user-attachments/assets/d2883ba0-52f2-4b3e-9611-93deadecd6f6">
 
-The table shows the lowest scoring indicator for each of the top 10 countries and the score of that indicator. There is a greater variety of indicators which these countries perform particuarly poorly at with each of the four indicators featuring across the table. 
+The table shows the lowest scoring indicator for each of the top 10 countries and the score of that indicator. There is a greater variety of indicators which these countries perform particuarly poorly at with each of the four indicators featuring across the table, with Judicial Effectiveness being the most popular lowest-scoring indicator. This may suggest that these countries have poor enforcement of AML laws and regulations despite having good overall Economic Freedom.  
 
 
 
