@@ -41,10 +41,15 @@ WHERE Overall_Score IS NOT NULL;
 This query resulted in an average score of 58.64, which suggests that many countries are mostly unfree and face significant barriers to economic freedom. 
 
 The next query finds the average score of the four AML indicators combined. For the purpose of this query any country with null values for any of those indicators has been excluded. 
-
-
-
 ```sql
+SELECT ROUND(AVG((Government_Integrity + Judicial_Effectiveness + Financial_Freedom + Property_Rights) / 4), 2) AS avg_aml_score,
+       COUNT(*) AS num_countries
+FROM `economic-freedom-index.EFI.2024_Data`
+WHERE Government_Integrity IS NOT NULL AND Judicial_Effectiveness IS NOT NULL
+  AND Financial_Freedom IS NOT NULL AND Property_Rights IS NOT NULL;
+```sql
+This query resulted in an average AML score of 49.55 and includes 177 countries who provided all the 4 indicators. This average is below the Index of Economic Freedom, with a difference of 9.09. This may suggest that AML procedures in many countries around the world are ineffective. 
+
 SELECT 
     Country, 
     Government_Integrity, 
