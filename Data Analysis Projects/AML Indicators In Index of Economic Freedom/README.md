@@ -1,6 +1,6 @@
 # Project Objective
 
-For this data analysis project, I have conducted SQL subqueries to analyse countries and regions who are potentially high-risk in regards to Anti-Money Laundering procedures, using the Index of Economic Freedom 2023 as my dataset. The link to the dataset can be found here on [Kaggle](https://www.kaggle.com/datasets/mlippo/freedom-economic-index) 
+For this data analysis project, I have conducted SQL subqueries using Big Query and created visualisations in Tableau to analyse countries and regions who are potentially high-risk in regards to Anti-Money Laundering procedures, using the Index of Economic Freedom 2023 as my dataset. The link to the dataset can be found here on [Kaggle](https://www.kaggle.com/datasets/mlippo/freedom-economic-index) 
 
 # Index of Economic Freedom
 
@@ -26,7 +26,7 @@ The following research questions will be used for this project:-
 
 - What is the difference between the overall average score for countries on the IEF and the average score for countries across the four AML indicators?
 - What are top 10 high-risk countries for AML and their lowest scoring AML Indicator?
-- Which top 10 countries have the largest discrepancy between their overall IEF score and their average AML score, their lowest scoring AML indicator?
+- Which top 10 countries that have a high IEF score but below average AML score, and their lowest scoring AML indicator?
 - What regions of the world contain countries who have below Average AML risk and high AML risk?
 
 # Average Scores
@@ -49,7 +49,7 @@ WHERE Government_Integrity IS NOT NULL AND Judicial_Effectiveness IS NOT NULL
 ```
 This query resulted in an average AML score of 49.55 and includes 177 countries who provided all the 4 indicators. This average is below the IEF, with a difference of 9.09. This may suggest that AML procedures in many countries around the world are ineffective. We can explore this further by analysing the high-risk countries.
 
-# High-Risk Countries
+# High-Risk AML Countries
 
 The query below finds the top 10 high-risk countries in the world based on their AML scores across the four indicators.
 ```sql
@@ -97,7 +97,7 @@ Using Tableau we can visualise the results of this query:-
 <img width="1132" alt="Screenshot 2024-09-08 at 19 51 02" src="https://github.com/user-attachments/assets/f99f0326-4db1-479d-abfd-a778a73921a6">
 As you can see North Korea scores very poorly for Government Integrity, Judicial Effectiveness, Financial Freedom and Property Rights, suggesting that there major barriers to Economic Freedom and serious issues with AML regulations in place there. For each of the top 10 countries, the lowest scoring indicator was Financial Freedom.
 
-# Anomalies Between Overall Score and AML Score
+# High IEF Score and Below Average AML Score
 
 So far we have looked at the highest-risk AML countries, but another query that can be performed is looking at the top 10 countries that have an above average IEF score but below average AML score, with their lowest scoring AML indicator also shown. The query below finds this information and shows the countries with the biggest difference between the two figures:-  
 ```sql
