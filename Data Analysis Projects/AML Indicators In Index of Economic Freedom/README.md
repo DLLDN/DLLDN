@@ -162,14 +162,41 @@ FROM BelowAverage, Averages
 WHERE combined_aml_score < avg_aml_score
 GROUP BY Region;
 ```
+
 The treemap below visualises the results of the query:-
+
 <img width="843" alt="Screenshot 2024-09-08 at 21 18 53" src="https://github.com/user-attachments/assets/19d8d050-a9e6-4da9-9da8-d790346d9637">
 
+As you can see Sub-Saharan Africa has the most countries falling below the AML average with 41, and Europe has the least with 8. 
 
+The following query gives the number of high-risk AML countries that fall below the Index of Economic Freedom average and AML average:-
+```sql
+WITH Averages AS (
+    SELECT AVG((Government_Integrity + Judicial_Effectiveness + Financial_Freedom + Property_Rights) / 4) AS avg_aml_score,
+           AVG(Overall_Score) AS avg_efi_score
+    FROM `economic-freedom-index.EFI.2024_Data`
+    WHERE Government_Integrity IS NOT NULL AND Judicial_Effectiveness IS NOT NULL
+      AND Financial_Freedom IS NOT NULL AND Property_Rights IS NOT NULL
+      AND Overall_Score IS NOT NULL
+),
+HighRiskCountries AS (
+    SELECT country, Region,
+           (Government_Integrity + Judicial_Effectiveness + Financial_Freedom + Property_Rights) / 4 AS combined_aml_score,
+           Overall_Score
+    FROM `economic-freedom-index.EFI.2024_Data`
+    WHERE Government_Integrity IS NOT NULL AND Judicial_Effectiveness IS NOT NULL
+      AND Financial_Freedom IS NOT NULL AND Property_Rights IS NOT NULL
+      AND Overall_Score IS NOT NULL)
+SELECT Region, COUNT(*) AS num_high_risk_countries
+FROM HighRiskCountries, Averages
+WHERE combined_aml_score < avg_aml_score AND Overall_Score < avg_efi_score
+GROUP BY Region;
+```
+In Tableau I have converted the count into a percentage and displayed the results as a pie chart:-
 
 <img width="918" alt="Screenshot 2024-09-08 at 21 26 22" src="https://github.com/user-attachments/assets/3276f68b-d744-4330-86ad-3f96abe3ca8d">
 
-
+The pie chart shows that 
 
 
 
