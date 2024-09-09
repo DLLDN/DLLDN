@@ -93,7 +93,7 @@ ORDER BY
     low_score_indicator
 LIMIT 10
 ```
-Using Tableau we can visualise the results of this query:-
+The bar chart below shows the results of this query:-
 <img width="1132" alt="Screenshot 2024-09-08 at 19 51 02" src="https://github.com/user-attachments/assets/f99f0326-4db1-479d-abfd-a778a73921a6">
 As you can see North Korea scores very poorly for Government Integrity, Judicial Effectiveness, Financial Freedom and Property Rights, suggesting that there major barriers to Economic Freedom and serious issues with AML regulations in place there. For each of the top 10 countries, the lowest scoring indicator was Financial Freedom.
 
@@ -134,7 +134,7 @@ FROM CountryScores, Averages
 WHERE Overall_Score > avg_efi_score AND combined_aml_score < avg_aml_score
 LIMIT 10;
 ```
-This query has been visualised using Tableau below:-
+This query has been visualised below:-
 
 <img width="578" alt="Screenshot 2024-09-08 at 21 23 59" src="https://github.com/user-attachments/assets/d2883ba0-52f2-4b3e-9611-93deadecd6f6">
 
@@ -208,8 +208,8 @@ Countries that perform well above the IEF average but below the AML average have
 
 It is evidently clear that Sub-Saharan Africa is a major problem for AML, for both the number of countries performing below the average AML score and the percentage being high-risk. It would a very challenging task to enforce and improve AML measures in that part of the world.  
 
+# Changes to dataset and data license
 
-
-
+For the purpose of the analysis I have edited columns in the dataset to assist with querying, and have created aggregated data as part of this analysis. The license can be found in the folder. 
 
 
