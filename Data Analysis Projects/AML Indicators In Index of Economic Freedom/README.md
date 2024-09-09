@@ -47,9 +47,14 @@ SELECT ROUND(AVG((Government_Integrity + Judicial_Effectiveness + Financial_Free
 FROM `economic-freedom-index.EFI.2024_Data`
 WHERE Government_Integrity IS NOT NULL AND Judicial_Effectiveness IS NOT NULL
   AND Financial_Freedom IS NOT NULL AND Property_Rights IS NOT NULL;
-```sql
+```
 This query resulted in an average AML score of 49.55 and includes 177 countries who provided all the 4 indicators. This average is below the Index of Economic Freedom, with a difference of 9.09. This may suggest that AML procedures in many countries around the world are ineffective. 
 
+# High Risk Countries
+
+
+
+```sql
 SELECT 
     Country, 
     Government_Integrity, 
