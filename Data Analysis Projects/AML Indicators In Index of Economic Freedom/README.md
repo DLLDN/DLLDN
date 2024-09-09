@@ -4,11 +4,11 @@ For this data analysis project, I have conducted SQL subqueries to analyse count
 
 # Index of Economic Freedom
 
-The Index of Economic Freedom is an annual ranking of countries based on their degree of economic freedom. It is published annually by the Heritage Foundation and Wall Street Journal.
+The Index of Economic Freedom (IEF) is an annual ranking of countries based on their degree of economic freedom. It is published annually by the Heritage Foundation and Wall Street Journal.
 
 # Anti-Money Laundering
 
-Anti-Money Laundering (AML) encompasses laws, regulations, and procedures aimed at preventing the disguise of illegally obtained funds as legitimate income. Its primary objectives are to detect, report, and prevent money laundering activities that conceal the illicit origin, nature, or ownership of funds. Of the 12 indicators in the Economic Freedom Index, 4 strongly relate to AML – Judicial Effectiveness, Government Integrity, Financial Freedom, and Property Rights.
+Anti-Money Laundering (AML) encompasses laws, regulations, and procedures aimed at preventing the disguise of illegally obtained funds as legitimate income. Its primary objectives are to detect, report, and prevent money laundering activities that conceal the illicit origin, nature, or ownership of funds. Of the 12 indicators in the IEF, 4 strongly relate to AML – Judicial Effectiveness, Government Integrity, Financial Freedom, and Property Rights.
 
 # The Four Indicators
 
@@ -24,10 +24,10 @@ Property rights measure the strength of a country's legal protection for private
 
 The following research questions will be used for this project:-
 
-- What is the difference between the overall average score for countries on the Index of Economic Freedom and the average score for countries across the four AML indicators?
+- What is the difference between the overall average score for countries on the IEF and the average score for countries across the four AML indicators?
 - What are top 10 high-risk countries for AML and their lowest scoring AML Indicator?
-- Which top 10 countries have the largest discrepancy between their overall Index of Economic Freedom score and their average AML score, their lowest scoring AML indicator?
-- What regions of the world contain the countries who have AML risk?
+- Which top 10 countries have the largest discrepancy between their overall IEF score and their average AML score, their lowest scoring AML indicator?
+- What regions of the world contain countries who have below Average AML risk and high AML risk?
 
 # Average Scores
 
@@ -196,11 +196,11 @@ In Tableau I have converted the count into a percentage and displayed the result
 
 <img width="918" alt="Screenshot 2024-09-08 at 21 26 22" src="https://github.com/user-attachments/assets/3276f68b-d744-4330-86ad-3f96abe3ca8d">
 
-The pie chart shows that 
+The pie chart shows that Sub-Saharan Africa has the highest percentage with 48.75% and Europe has the least with 5%. 
 
+# Summary and Findings
 
-
-
+The analysis performed shows that AML indicators are bringing averages down the Economic Freedom for most countries, and this is a concerning issue worldwide. Financial Freedom poses the biggest barrier for the highest risk AML countries, and it is not until this area has been improved will we start to see overall improvements in AML scores, 
 
 
 
