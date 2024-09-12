@@ -1,10 +1,10 @@
 ## Project Objective
 
-This Data Analyst project focuses on cluster analysis of a dataset relating to the Bribery Reports in India between 2015 to 2022, which can be found on this Kaggle link. 
+This Data Analyst project focuses on cluster analysis of a dataset relating to Bribery Reports in India between 2015 to 2022, which can be found on this Kaggle link. 
 
 ## Bribery
 
-The offering, giving, receiving, or soliciting of any item of value to influence the actions of an official or other person in charge of a public or legal duty.
+Bribery is the offering, giving, receiving, or soliciting of any item of value to influence the actions of an official or other person in charge of a public or legal duty.
 
 ## Bribery In India
 
