@@ -29,6 +29,7 @@ plt.title('Top 5 States by Number of Complaints')
 plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 plt.show()
 ```
+![Top 5 States by Number of Complaints](https://github.com/user-attachments/assets/9b31cdbf-f21f-40d0-ba28-2b6633b1a763)
 
 ```python
 result = bribery_reports.groupby('Exact Location').agg(
@@ -44,6 +45,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 ```
+![Top 5 Locations by Average Views](https://github.com/user-attachments/assets/d74d129a-82fb-4879-a962-5ec615ab404f)
 
 ```python
 result = bribery_reports.groupby('State').agg(
@@ -59,6 +61,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 ```
+![Top Five States by Average Views](https://github.com/user-attachments/assets/bac7657e-f6e5-4a08-9b12-4e4392e200ff)
 
 ```python
 result = bribery_reports.groupby('Department').agg(
@@ -73,6 +76,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 ```
+![Top 5 Departments by Average Views](https://github.com/user-attachments/assets/66ed3273-e4d5-4c5c-9cc8-84a0e10d01f0)
 
 ```python
 bribery_reports['BribeRange'] = pd.cut(bribery_reports['Amount'], 
@@ -89,3 +93,4 @@ plt.ylabel('Exact Location')
 plt.tight_layout()
 plt.show()
 ```
+![Top 5 Locations by Bribe Amount Range Frequency](https://github.com/user-attachments/assets/62f3fefd-986a-4f8a-8b31-03bd0a1e9ca7)
