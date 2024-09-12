@@ -30,4 +30,62 @@ plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 plt.show()
 ```
 
+```python
+result = bribery_reports.groupby('Exact Location').agg(
+    AvgViews=('Views', 'mean')
+).reset_index().sort_values('AvgViews', ascending=False).head(5)
 
+plt.figure(figsize=(10, 6))
+plt.bar(result['Exact Location'], result['AvgViews'], color='green')
+plt.title('Top 5 Locations by Average Views')
+plt.xlabel('Exact Location')
+plt.ylabel('Average Views')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+```
+
+```python
+result = bribery_reports.groupby('State').agg(
+    AvgViews=('Views', 'mean')
+).reset_index().sort_values('AvgViews', ascending=False).head(5)
+
+plt.figure(figsize=(10, 6))
+plt.plot(result['State'], result['AvgViews'], marker='o', linestyle='-', color='purple')
+plt.title('Top 5 States by Average Views')
+plt.xlabel('State')
+plt.ylabel('Average Views')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+```
+
+```python
+result = bribery_reports.groupby('Department').agg(
+    AvgViews=('Views', 'mean')
+).reset_index().sort_values('AvgViews', ascending=False).head(5)
+plt.figure(figsize=(10, 6))
+plt.bar(result['Department'], result['AvgViews'], color='orange')
+plt.title('Top 5 Departments by Average Views')
+plt.xlabel('Department')
+plt.ylabel('Average Views')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+```
+
+```python
+bribery_reports['BribeRange'] = pd.cut(bribery_reports['Amount'], 
+    bins=[0, 1000, 5000, float('inf')], 
+    labels=['Low', 'Medium', 'High'])
+result = bribery_reports.groupby(['Exact Location', 'BribeRange']).size().unstack(fill_value=0)
+top_locations = result.sum(axis=1).nlargest(5).index
+result = result.loc[top_locations]
+plt.figure(figsize=(10, 6))
+sns.heatmap(result, annot=True, cmap='Reds', fmt='d')
+plt.title('Top 5 Locations by Bribe Amount Range Frequency')
+plt.xlabel('Bribe Amount Range')
+plt.ylabel('Exact Location')
+plt.tight_layout()
+plt.show()
+```
