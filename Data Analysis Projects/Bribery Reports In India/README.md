@@ -8,4 +8,8 @@ Bribery is the offering, giving, receiving, or soliciting of any item of value t
 
 ## Bribery In India
 
-India was ranked 86 out of 180 countries in Transparency International’s (TI) Corruption Perceptions Index 2021. TI’s Global Corruption Barometer (GCB) Asia found that India has the highest bribery rate in Asia (39%) and the highest number of people who had to use personal connections to access public services (46%). Although reporting corruption is essential to curb the spread, a majority of those surveyed (63%) feared retaliation if they reported corruption. A large number of people (89%) felt government corruption was a big problem.
+India was ranked 86 out of 180 countries in Transparency International’s (TI) Corruption Perceptions Index 2021. TI’s Global Corruption Barometer (GCB) Asia found that India has the highest bribery rate in Asia (39%) and the highest number of people who had to use personal connections to access public services (46%). Although reporting corruption is essential to curb the spread, a majority of those surveyed (63%) feared retaliation if they reported corruption. A large number of people (89%) felt government corruption was a big problem.[1]
+
+## Citations
+
+[1]: https://www.gov.uk/government/publications/overseas-business-risk-india/overseas-business-risk-india#bribery-and-corruption "Overseas Business Risk - India: Bribery and corruption"
