@@ -1,6 +1,6 @@
 # Project Objective
 
-For this data analysis project, I have created fictional data tables of information relating to AML transaction monitoring for a fictional bank called XCVBVN Finance. The scenario is that AML and compliance professionals have come to the bank to improve the bank's AML functionality and screening of high risk customers, customer due diligence and uncovering any potential financial crime. 
+For this data analysis project, I have created fictional data tables of information relating to AML transaction monitoring for a fictional bank called XCVBVN Finance. The scenario is that AML and compliance professionals have come to the bank to improve the bank's AML functionality and screening of high risk customers, assessing of customer due diligence and uncovering any potential financial crime. 
 
 # Data Tables
 
@@ -12,9 +12,9 @@ The data tables were created in R and have no confidential or real data, and exp
 - **Number of beneficial owners associated with them** | *CustomerID*, *NumberOfBeneficialOwners*, *OwnershipStructure*, *JurisdictionsInvolved*, *OwnershipTransparency*, *LastReviewDate*; 
 - **Customers who have had adverse media coverage** | *CustomerID*, *NatureOfAdverseMedia*, *MediaSource*, *DateReported*;
 - **Customers associated with politically exposed persons (PEPs)** | *CustomerID*, *PEPAssociationType*, *PEPPosition*, *PEPCountry*, *AssociationStartDate*, *LastReviewDate*;
-- **Whether they were able to explain their source of funds**;
-- **Whether they had supplied potentially suspicious documents**;
-- **Whether there had been any third party involvement**;
-- **Potential alerts with any of the customers**.  
+- **Whether they were able to explain their source of funds** | *InconsistencyID*, *AccountID*, *CustomerID*, *Date*, *Amount*, *SourceType*;
+- **Whether they had supplied potentially suspicious documents** | DocumentID, CustomerID, CustomerName, DocumentType, IssueDate, *SuspicionType*, *VerificationStatus*, *ReportedToAuthorities*;
+- **Whether there had been any third party involvement** | *InvolvementID*, *TransactionID*, *AccountID*, *CustomerID*, *ThirdPartyName*, *RelationshipType*, *JustificationProvided*, *RiskLevel*;
+- **Potential alerts with any of the customers** | *AlertID*, *TransactionID*, *AccountID*, *CustomerID*, *AlertType*, *AlertDate*, *Resolved*, *AssignedTo*.  
 
 The areas covered in the tables relate to real AML concepts and risks and act to simulate areas AML professionals would investigate. Many of the areas relate to [Financial Action Task Force (FATF) recommendation 10](https://www.fatf-gafi.org/content/dam/fatf-gafi/recommendations/FATF%20Recommendations%202012.pdf.coredownload.inline.pdf), which focuses on the need to investigate potential suspicious transactions and scrutinize documentation and information provided by a customer. 
