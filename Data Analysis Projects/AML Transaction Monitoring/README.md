@@ -8,10 +8,10 @@ The data tables were created in R and have no confidential or real data, and exp
 - **Customers** | *CustomerID*, *RiskScore*, *Country*;
 - **Their transactions** | *TransactionID*, *CustomerID*, *Amount*, *TransactionType*, *Country*, *IPAddress*, *DateTime*;
 - **The type of account they hold** | *AccountID*, *CustomerID*, *AccountType*, *Balance*, *OpenDate*;
-- **Their occupation**;
-- **Number of beneficial owners associated with them**;
-- **Customers who have had adverse media coverage**;
-- **Customers associated with politically exposed persons (PEPs)**;
+- **Their occupation** | *CustomerID*, *Occupation*;
+- **Number of beneficial owners associated with them** | *CustomerID*, *NumberOfBeneficialOwners*, *OwnershipStructure*, *JurisdictionsInvolved*, *OwnershipTransparency*, *LastReviewDate*; 
+- **Customers who have had adverse media coverage** | *CustomerID*, *NatureOfAdverseMedia*, *MediaSource*, *DateReported*;
+- **Customers associated with politically exposed persons (PEPs)** | *CustomerID*, *PEPAssociationType*, *PEPPosition*, *PEPCountry*, *AssociationStartDate*, *LastReviewDate*;
 - **Whether they were able to explain their source of funds**;
 - **Whether they had supplied potentially suspicious documents**;
 - **Whether there had been any third party involvement**;
