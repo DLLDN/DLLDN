@@ -4,8 +4,8 @@ For this data analysis project, I have create fictional data tables of informati
 
 # Data Tables
 
-The data tables were created in R and have no confidential or real data, and exported to csv format for SQL querying in Big Query. The tables related to:-
-- **customers** *CustomerID*, *RiskScore*, *Country*.
+The data tables were created in R and have no confidential or real data, and exported to csv format for SQL querying in Big Query. The tables related to, with column names in italics:-
+- **customers**|*CustomerID*, *RiskScore*, *Country*.
 - **their transactions**;
 - **the type of account they hold**;
 - **their occupation**;
