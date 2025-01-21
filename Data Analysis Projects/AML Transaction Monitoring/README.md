@@ -17,4 +17,4 @@ The data tables were created in R and have no confidential or real data, and exp
 - whether there had been any third party involvement;
 - potential alerts with any of the customers.  
 
-The areas covered in the tables relate to real AML concepts and risks and act to simulate areas AML professionals would investigate. Many of the areas relate to Financial Action Task Force (FATF) recommendation 10, which focuses on the need to investigate potential suspicious transactions and scrutinize documentation and information provided by a customer. 
+The areas covered in the tables relate to real AML concepts and risks and act to simulate areas AML professionals would investigate. Many of the areas relate to [Financial Action Task Force (FATF) recommendation 10](https://www.fatf-gafi.org/content/dam/fatf-gafi/recommendations/FATF%20Recommendations%202012.pdf.coredownload.inline.pdf), which focuses on the need to investigate potential suspicious transactions and scrutinize documentation and information provided by a customer. 
