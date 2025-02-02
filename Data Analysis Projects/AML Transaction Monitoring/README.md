@@ -77,14 +77,14 @@ LIMIT 100
 SELECT 
   icf.Source_Type,
   COUNT(DISTINCT icf.Customer_ID) as Customer_Count,
-  AVG(t.Amount) as AvgTransactionAmount,
-  MAX(t.Amount) as MaxTransactionAmount,
-  SUM(t.Amount) as TotalTransactionAmount
+  ROUND(AVG(t.Amount), 2) as AvgTransactionAmount,
+  ROUND(MAX(t.Amount), 2) as MaxTransactionAmount,
+  ROUND(SUM(t.Amount), 2) as TotalTransactionAmount
 FROM `transaction-monitoring-for-aml.TM.Inconsistent_Funding` icf
 JOIN `transaction-monitoring-for-aml.TM.Transactions` t
   ON icf.Customer_ID = t.Customer_ID
 WHERE icf.Source_Type IN ('Cryptocurrency', 'Unknown Origin')
-GROUP BY icf.Source_Type
+GROUP BY icf.Source_Type;
 ```
 
 ```sql
