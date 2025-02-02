@@ -31,6 +31,7 @@ Which customer did not provide an explanation for their source of funds and thei
 # High-Value Transactions
 
 The following query in SQL returns all high-value transactions in the dataset - where the transaction amount is more than $10,000.
+
 ```sql
 SELECT *
 FROM `transaction-monitoring-for-aml.TM.Transactions`
@@ -38,5 +39,64 @@ WHERE Amount > 10000
 ORDER BY Amount DESC;
 ```
 
+```sql
+SELECT 
+  t.Customer_ID,
+  COUNT(*) AS TransactionCount,
+  ROUND(SUM(t.Amount), 2) AS TotalAmount,
+  ROUND(AVG(t.Amount), 2) AS AverageAmount,
+  ROUND(MAX(t.Amount), 2) AS LargestTransaction,
+  ROUND(MIN(t.Amount), 2) AS SmallestTransaction,
+  MIN(t.Date_Time) AS FirstTransactionDate,
+  MAX(t.Date_Time) AS LastTransactionDate,
+  cbo.Number_Of_Beneficial_Owners,
+  cbo.Ownership_Structure
+FROM `transaction-monitoring-for-aml.TM.Transactions` t
+JOIN `transaction-monitoring-for-aml.TM.Complex_Beneficial_Ownership` cbo
+  ON t.Customer_ID = cbo.Customer_ID
+WHERE t.Amount BETWEEN 50 AND 999
+GROUP BY t.Customer_ID, cbo.Number_Of_Beneficial_Owners, cbo.Ownership_Structure
+HAVING COUNT(*) > 1
+ORDER BY TransactionCount DESC, TotalAmount DESC;
+```
 
+```sql
+SELECT 
+  Customer_ID,
+  COUNT(*) AS SuspiciousDocCount,
+  STRING_AGG(DISTINCT Document_Type, ', ') AS DocumentTypes,
+  STRING_AGG(DISTINCT Suspicion_Type, ', ') AS SuspicionTypes
+FROM `transaction-monitoring-for-aml.TM.Suspicious_Documentation`
+GROUP BY Customer_ID
+HAVING COUNT(*) >= 3
+ORDER BY SuspiciousDocCount DESC
+LIMIT 100
+```
 
+```sql
+SELECT 
+  icf.Source_Type,
+  COUNT(DISTINCT icf.Customer_ID) as Customer_Count,
+  AVG(t.Amount) as AvgTransactionAmount,
+  MAX(t.Amount) as MaxTransactionAmount,
+  SUM(t.Amount) as TotalTransactionAmount
+FROM `transaction-monitoring-for-aml.TM.Inconsistent_Funding` icf
+JOIN `transaction-monitoring-for-aml.TM.Transactions` t
+  ON icf.Customer_ID = t.Customer_ID
+WHERE icf.Source_Type IN ('Cryptocurrency', 'Unknown Origin')
+GROUP BY icf.Source_Type
+```
+
+```sql
+SELECT 
+  icf.Customer_ID,
+  icf.Source_Type,
+  icf.Amount,
+  t.Transaction_ID,
+  t.Date_Time
+FROM `transaction-monitoring-for-aml.TM.Inconsistent_Funding` icf
+JOIN `transaction-monitoring-for-aml.TM.Transactions` t
+  ON icf.Customer_ID = t.Customer_ID
+WHERE icf.Explanation = 'Not Provided'
+ORDER BY icf.Amount DESC
+```
