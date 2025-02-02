@@ -31,7 +31,12 @@ Which customer did not provide an explanation for their source of funds and thei
 # High-Value Transactions
 
 The following query in SQL returns all high-value transactions in the dataset - where the transaction amount is more than $10,000.
-
+```sql
+SELECT *
+FROM `transaction-monitoring-for-aml.TM.Transactions`
+WHERE Amount > 10000
+ORDER BY Amount DESC;
+```
 
 
 
