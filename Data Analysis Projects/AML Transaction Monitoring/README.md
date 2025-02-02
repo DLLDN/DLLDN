@@ -8,7 +8,6 @@ The data tables were created in R and have no confidential or real data, and exp
 - **Customers** | *CustomerID*, *RiskScore*, *Country*;
 - **Their transactions** | *TransactionID*, *CustomerID*, *Amount*, *TransactionType*, *Country*, *IPAddress*, *DateTime*;
 - **The type of account they hold** | *AccountID*, *CustomerID*, *AccountType*, *Balance*, *OpenDate*;
-- **Their occupation** | *CustomerID*, *Occupation*;
 - **Number of beneficial owners associated with them** | *CustomerID*, *NumberOfBeneficialOwners*, *OwnershipStructure*, *JurisdictionsInvolved*, *OwnershipTransparency*, *LastReviewDate*; 
 - **Customers who have had adverse media coverage** | *CustomerID*, *NatureOfAdverseMedia*, *MediaSource*, *DateReported*;
 - **Customers associated with politically exposed persons (PEPs)** | *CustomerID*, *PEPAssociationType*, *PEPPosition*, *PEPCountry*, *AssociationStartDate*, *LastReviewDate*;
@@ -17,4 +16,4 @@ The data tables were created in R and have no confidential or real data, and exp
 - **Whether there had been any third party involvement** | *InvolvementID*, *TransactionID*, *AccountID*, *CustomerID*, *ThirdPartyName*, *RelationshipType*, *JustificationProvided*, *RiskLevel*;
 - **Potential alerts with any of the customers** | *AlertID*, *TransactionID*, *AccountID*, *CustomerID*, *AlertType*, *AlertDate*, *Resolved*, *AssignedTo*.  
 
-The areas covered in the tables relate to real AML concepts and risks and act to simulate areas AML professionals would investigate. Many of the areas relate to [Financial Action Task Force (FATF) recommendation 10](https://www.fatf-gafi.org/content/dam/fatf-gafi/recommendations/FATF%20Recommendations%202012.pdf.coredownload.inline.pdf), which focuses on the need to investigate potential suspicious transactions and scrutinize documentation and information provided by a customer. 
+The areas covered in the tables relate to real AML concepts and risks and act to simulate areas AML professionals would investigate. As you can see, some column attributes such as Customer_ID appear in multiple tables. Many of the areas relate to [Financial Action Task Force (FATF) recommendation 10](https://www.fatf-gafi.org/content/dam/fatf-gafi/recommendations/FATF%20Recommendations%202012.pdf.coredownload.inline.pdf), which focuses on the need to investigate potential suspicious transactions and scrutinize documentation and information provided by a customer. 
