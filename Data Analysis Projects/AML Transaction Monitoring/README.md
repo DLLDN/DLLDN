@@ -17,3 +17,21 @@ The data tables were created in R and have no confidential or real data, and exp
 - **Potential alerts with any of the customers** | *AlertID*, *TransactionID*, *AccountID*, *CustomerID*, *AlertType*, *AlertDate*, *Resolved*, *AssignedTo*.  
 
 The areas covered in the tables relate to real AML concepts and risks and act to simulate areas AML professionals would investigate. As you can see, some column attributes such as Customer_ID appear in multiple tables. Many of the areas relate to [Financial Action Task Force (FATF) recommendation 10](https://www.fatf-gafi.org/content/dam/fatf-gafi/recommendations/FATF%20Recommendations%202012.pdf.coredownload.inline.pdf), which focuses on the need to investigate potential suspicious transactions and scrutinize documentation and information provided by a customer. 
+
+# Research Questions
+
+The following research questions will be used for this project:-
+
+How many high-value transactions are there in the dataset?
+Which customers have a high number of small transactions (under $1000) and have complex beneficial ownership?
+How many customers have suspicious documents, their suspicious documentation and the reason for suspicion?
+How many transactions had cryptocurrency and unknown origin as their source of funds?
+Which customer did not provide an explanation for their source of funds and their tranasction amount?
+
+# High-Value Transactions
+
+The following query in SQL returns all high-value transactions in the dataset - where the transaction amount is more than $10,000.
+
+
+
+
