@@ -18,7 +18,7 @@ The Index of Economic Freedom (IEF) is an annual ranking of countries based on t
 
 # Anti-Money Laundering
 
-Anti-Money Laundering (AML) encompasses laws, regulations, and procedures aimed at preventing the disguise of illegally obtained funds as legitimate income. Its primary objectives are to detect, report, and prevent money laundering activities that conceal the illicit origin, nature, or ownership of funds. Of the 12 indicators in the IEF, 4 strongly relate to AML – Judicial Effectiveness, Government Integrity, Financial Freedom, and Property Rights.
+Anti-Money Laundering (AML) encompasses laws, regulations, and procedures aimed at preventing the disguise of illegally obtained funds as legitimate income. Its primary objectives are to detect, report, and prevent money laundering (ML) activities that conceal the illicit origin, nature, or ownership of funds. Of the 12 indicators in the IEF, 4 strongly relate to AML – Judicial Effectiveness, Government Integrity, Financial Freedom, and Property Rights.
 
 # The Four AML Indicators
 
@@ -35,9 +35,9 @@ Property rights measure the strength of a country's legal protection for private
 The following research questions will be used for this project:-
 
 - What is the difference between the overall average score for countries on the IEF and the average score for countries across the four AML indicators?
-- What are top 10 high-risk countries for money laundering and their lowest scoring AML Indicator?
+- What are top 10 high-risk countries for ML and their lowest scoring AML Indicator?
 - Which top 10 countries that have a high IEF score but below average AML score, and their lowest scoring AML indicator?
-- What regions of the world contain countries who have below Average AML risk and high money laundering risk?
+- What regions of the world contain countries who have below Average AML risk and high ML risk?
 
 # Average Scores
 
@@ -150,7 +150,7 @@ This query has been visualised below:-
 
 The table shows the lowest scoring indicator for each of the top 10 countries and the score of that indicator. There is a greater variety of indicators which these countries perform particuarly poorly at with each of the four indicators featuring across the table, with Judicial Effectiveness being the most popular lowest-scoring indicator. 
 
-# AML Risk for Regions of the World
+# ML Risk for Regions of the World
 
 The following query calculates the average AML score and counts the number of countries in each region with scores below the average:-
 ```sql
