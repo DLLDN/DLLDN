@@ -59,7 +59,7 @@ WHERE Government_Integrity IS NOT NULL AND Judicial_Effectiveness IS NOT NULL
 ```
 This query resulted in an average AML score of 49.55 and includes 177 countries who provided all the 4 indicators. This average is below the IEF, with a difference of 9.09. This may suggest that AML procedures in many countries around the world are ineffective. We can explore this further by analysing the high-risk countries.
 
-# High-Risk AML Countries
+# High-Risk Countries
 
 The query below finds the top 10 high-risk countries in the world based on their AML scores across the four indicators.
 ```sql
@@ -109,7 +109,7 @@ As you can see North Korea scores very poorly for Government Integrity, Judicial
 
 # High IEF Score and Below Average AML Score
 
-So far we have looked at the highest-risk AML countries, but another query that can be performed is looking at the top 10 countries that have an above average IEF score but below average AML score, with their lowest scoring AML indicator also shown. The query below finds this information and shows the countries with the biggest difference between the two figures:-  
+So far we have looked at the highest-risk countries, but another query that can be performed is looking at the top 10 countries that have an above average IEF score but below average AML score, with their lowest scoring AML indicator also shown. The query below finds this information and shows the countries with the biggest difference between the two figures:-  
 ```sql
 WITH Averages AS (
     SELECT AVG(Overall_Score) AS avg_efi_score,
@@ -216,7 +216,7 @@ Financial Freedom poses the biggest barrier for the highest risk countries, and 
 
 Countries that perform well above the IEF average but below the AML average have major shortcomings in judicial effectiveness, and suggests regulatory procedures and AML legislation is severely lacking. However, as these countries perform good overall on the IEF, it offers scope and encouragement that AML measures can be improved. 
 
-It is evidently clear that Sub-Saharan Africa is a major problem for AML, for both the number of countries performing below the average AML score and the percentage being high-risk. It would be a very challenging task to enforce and improve AML measures in that part of the world.  
+It is evidently clear that Sub-Saharan Africa is frought with potential money laundering issues, for both the number of countries performing below the average AML score and the percentage being high-risk. It would be a very challenging task to enforce and improve AML measures in that part of the world.  
 
 # Changes to dataset and data license
 
