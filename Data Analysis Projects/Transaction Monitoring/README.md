@@ -5,15 +5,15 @@ This Data Analyst project focuses on transaction monitoring analysis of suspicio
 ## Dataset
 
 The table contains the following columns:-
-- **Time** | 
-- **Date** | 
-- **Sender_account** | 
-- **Receiver_account** |
-- **Amount** | 
-- **Payment_currency** | 
-- **Received_currency** | 
-- **Sender_bank_location** | 
-- **Receiver_bank_location** | 
-- **Payment_type** |
-- **Is_laundering** |
-- **Laundering_type** | 
+- **Time** | The time of the transaction.
+- **Date** | The date of the transaction.
+- **Sender_account** | The sender account number.
+- **Receiver_account** | The receiver account number.
+- **Amount** | The amount of the transaction. 
+- **Payment_currency** | The payment currency.
+- **Received_currency** | The received currency.
+- **Sender_bank_location** | The location of the sender.
+- **Receiver_bank_location** | The location of the receiver.
+- **Payment_type** | The payment type for the transaction.
+- **Is_laundering** | Whether or not the transaction was considered as money laundering (1 for yes, 0 for no)
+- **Laundering_type** | The type of money laundering suspicion (for example structuring or layering).
