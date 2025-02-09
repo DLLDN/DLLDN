@@ -6,4 +6,18 @@ This Data Analyst project focuses on transaction monitoring analysis of suspicio
 
 The dataset contains the following columns:-
 
+# Dataset
 
+The tables related to the following areas:-
+- **Time** | 
+- **Date** | 
+- **Sender_account** | 
+- **Receiver_account** |
+- **Amount** | 
+- **Payment_currency** | 
+- **Received_currency** | 
+- **Sender_bank_location** | 
+- **Receiver_bank_location** | 
+- **Payment_type** |
+- **Is_laundering** |
+- **Laundering_type** | 
