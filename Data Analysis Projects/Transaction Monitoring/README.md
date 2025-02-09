@@ -30,10 +30,36 @@ The following questions will be used as part of this analysis using the dataset 
 
 ## Potential laundering transactions
 
-The following R query finds all the potentially laundering transactions from the S-AML dataset:-
+The following R query finds all the potentially laundering transactions from the S-AML dataset. This dataset will be called suspicious:-
 ```r
-result <- SAML_D[SAML_D$Is_laundering == TRUE, ]
+suspicious <- SAML_D[SAML_D$Is_laundering == TRUE, ]
 ```
+
+The query returned 9,873 entries which were potentially suspicious. This dataset will be the focus of the analysis and subsequent queries.
+
+## Total transaction amounts for laundering transactions over time
+
+The following query creates an line chart in R showing the total transaction amounts for laundering transactions over time:- 
+```r
+library(ggplot2)
+
+suspicious$Date <- as.Date(suspicious$Date)
+
+daily_transactions <- suspicious %>%
+  group_by(Date) %>%
+  summarise(TotalAmount = sum(Amount))
+
+ggplot(daily_transactions, aes(x = Date, y = TotalAmount)) +
+  geom_line(color = "steelblue") +
+  scale_y_continuous(labels = scales::dollar_format()) +
+  theme_minimal() +
+  labs(title = "Total Transaction Amounts Over Time",
+       x = "Date",
+       y = "Total Transaction Amount")
+ggsave("transactions_over_time.png", width = 10, height = 6)
+```
+
+
 
 
 
