@@ -31,7 +31,9 @@ The following questions will be used as part of this analysis using the dataset 
 ## Potential laundering transactions
 
 The following R query finds all the potentially laundering transactions from the S-AML dataset:-
-
+```r
+result <- SAML_D[SAML_D$Is_laundering == TRUE, ]
+```
 
 
 
