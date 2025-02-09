@@ -60,8 +60,11 @@ ggsave("transactions_over_time.png", width = 10, height = 6)
 ```
 ![Total Transaction Amounts Over Time](https://github.com/user-attachments/assets/2426d594-72d0-4fae-9a72-9535912aa69e)
 
+![Distribution Of Transaction Amounts Laundering Type](https://github.com/user-attachments/assets/766320f4-cb38-4e61-8eb0-f098615a0885)
 
+![Frequency Of Different Laundering Types](https://github.com/user-attachments/assets/e24b4b4a-cfad-4a78-bc51-2cf13f0145e7)
 
+![Distribution Of Transaction Amounts Payment Type](https://github.com/user-attachments/assets/3a8d49b3-6662-4004-9c65-1a507e35a9d4)
 
 
 
