@@ -216,7 +216,7 @@ Financial Freedom poses the biggest barrier for the highest risk countries, and 
 
 Countries that perform well above the IEF average but below the AML average have major shortcomings in judicial effectiveness, and suggests regulatory procedures and AML legislation is severely lacking. However, as these countries perform good overall on the IEF, it offers scope and encouragement that AML measures can be improved. 
 
-It is evidently clear that Sub-Saharan Africa is frought with potential money laundering issues, for both the number of countries performing below the average AML score and the percentage being high-risk. It would be a very challenging task to enforce and improve AML measures in that part of the world.  
+It is evidently clear that Sub-Saharan Africa is frought with potential ML issues, for both the number of countries performing below the average AML score and the percentage being high-risk. It would be a very challenging task to enforce and improve AML measures in that part of the world.  
 
 # Changes to dataset and data license
 
