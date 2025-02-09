@@ -1,6 +1,6 @@
 # Project Objective
 
-For this data analysis project, I have conducted SQL subqueries using Big Query and created visualisations in Tableau to analyse countries and regions who are potentially high-risk and fall below the average score in regards to Anti-Money Laundering procedures, using the Index of Economic Freedom 2023 as my dataset. The link to the dataset can be found here on [Kaggle](https://www.kaggle.com/datasets/mlippo/freedom-economic-index) 
+For this data analysis project, I have conducted SQL subqueries using Big Query and created visualisations in Tableau to analyse countries and regions who are potentially high-risk and fall below the average score with regards to Anti-Money Laundering procedures, using the Index of Economic Freedom 2023 as my dataset. The link to the dataset can be found here on [Kaggle](https://www.kaggle.com/datasets/mlippo/freedom-economic-index) 
 
 # Index of Economic Freedom
 
@@ -35,9 +35,9 @@ Property rights measure the strength of a country's legal protection for private
 The following research questions will be used for this project:-
 
 - What is the difference between the overall average score for countries on the IEF and the average score for countries across the four AML indicators?
-- What are top 10 high-risk countries for AML and their lowest scoring AML Indicator?
+- What are top 10 high-risk countries for money laundering and their lowest scoring AML Indicator?
 - Which top 10 countries that have a high IEF score but below average AML score, and their lowest scoring AML indicator?
-- What regions of the world contain countries who have below Average AML risk and high AML risk?
+- What regions of the world contain countries who have below Average AML risk and high money laundering risk?
 
 # Average Scores
 
@@ -212,7 +212,7 @@ The pie chart shows that Sub-Saharan Africa has the highest percentage with 48.7
 
 The analysis performed shows that AML indicators are bringing down the IEF averages for most countries around the world, and this is a concerning issue. 
 
-Financial Freedom poses the biggest barrier for the highest risk AML countries, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. 
+Financial Freedom poses the biggest barrier for the highest risk countries, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. 
 
 Countries that perform well above the IEF average but below the AML average have major shortcomings in judicial effectiveness, and suggests regulatory procedures and AML legislation is severely lacking. However, as these countries perform good overall on the IEF, it offers scope and encouragement that AML measures can be improved. 
 
