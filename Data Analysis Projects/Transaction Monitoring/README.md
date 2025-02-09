@@ -1,14 +1,10 @@
-## Project Objective
+# Project Objective
 
 This Data Analyst project focuses on transaction monitoring analysis of suspicious anti-money laundering transactions. The dataset used is a simulated transaction monitoring dataset and can be found at this link 
 
-## Project Objective
+## Dataset
 
-The dataset contains the following columns:-
-
-# Dataset
-
-The tables related to the following areas:-
+The table contains the following columns:-
 - **Time** | 
 - **Date** | 
 - **Sender_account** | 
