@@ -58,7 +58,7 @@ ggplot(daily_transactions, aes(x = Date, y = TotalAmount)) +
        y = "Total Transaction Amount")
 ggsave("transactions_over_time.png", width = 10, height = 6)
 ```
-
+![Total Transaction Amounts Over Time](images/Total-Transaction-Amounts-Over-Time.jpg)
 
 
 
