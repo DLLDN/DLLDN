@@ -83,7 +83,7 @@ ggplot(suspicious, aes(x = Amount, y = Laundering_type, fill = Laundering_type))
 
 ![Distribution Of Transaction Amounts Laundering Type](https://github.com/user-attachments/assets/766320f4-cb38-4e61-8eb0-f098615a0885)
 
-The ridgeline chart shows that there are a number of structuring transactions around the $10,000 mark, with Over-invoicing accounting for the largest transactions of $1,000,000. Cash wihdrawals account for the lowest transaction amounts, with many being just over $100.
+The ridgeline chart shows that there are a number of structuring transactions around the $10,000 mark, with Over-invoicing accounting for the largest transactions of $1,000,000. Cash withdrawals account for the lowest transaction amounts, with many being just over $100.
 
 ## Frequency of Different Laundering Types
 
@@ -129,5 +129,15 @@ ggplot(suspicious, aes(x = Payment_type, y = Amount, fill = Payment_type)) +
 
 ![Distribution Of Transaction Amounts Payment Type](https://github.com/user-attachments/assets/3a8d49b3-6662-4004-9c65-1a507e35a9d4)
 
-The violin chart shows a fairly even spread betweeen Automated Chequeing House (ACH), Cheque, Credit Card, Cross-Border and Debit Card payment types for the transactions, with many of those payment types just over the $10,000.
+The violin chart shows a fairly even spread between Automated Chequeing House (ACH), Cheque, Credit Card, Cross-Border and Debit Card payment types for the transactions, with many of those payment types just over the $10,000.
 
+## Summary
+
+The transaction data reveals several patterns indicative of potential money laundering activities:
+
+**Spikes in Transaction Amounts:** The line graph shows large spikes in transaction amounts (over $10 million) during late 2022 and mid-2023.
+**Structuring and Amount Thresholds:** The ridgeline chart highlights a concentration of "structuring" transactions around the $10,000 mark, suggesting efforts to avoid reporting thresholds. Cash withdrawals often just exceed $100 indicating they are trying to keep low profiles and remain under the radar. Over-invoicing transactions are also present and large, which are more visible and may require more sophistication to set up.
+**Transaction Frequency by Type:** Structuring is the most frequent laundering type, while over-invoicing is the least.
+**Payment Method Diversity:** Transactions are dispersed across various payment methods, indicating a general lack of favouritism for any one particular payment type.
+
+The combination of these findings is strongly suggestive of money laundering. Spikes in Amounts could signify the initial "placement" stage where large sums of illicit funds are introduced into the financial system. Structuring is a classic money laundering technique to evade scrutiny by breaking up large sums into smaller, less conspicuous amounts below reporting thresholds. The $10,000 threshold is a common trigger for reporting requirements. Cash withdrawals and structuring Smaller transactions may be used for "smurfing", where funds are dispersed through multiple accounts to obscure their origin. The higher frequency of cash withdrawals could indicate an attempt to make transactions untraceable and difficult to monitor. Payment Method Diversity Utilizing a mix of payment methods ("layering") helps obscure the audit trail and makes it harder to connect funds to their illicit source. The presence of different currency types and bank locations also adds to the money-laundering operations, as it becomes harder to track and regulate. It's clear that money-laundering activity is a significant part of operations. There appear to be several operations occurring in the dataset, from small smurfing and structuring operations to more visible over-invoicing and payment type distributions. By breaking down operations into several aspects, it appears that the bad actors are trying to reduce visibility, remain under the radar, and ultimately harder to track. The line graph shows large spikes in transaction amounts (over $10 million) during late 2022 and mid-2023.
