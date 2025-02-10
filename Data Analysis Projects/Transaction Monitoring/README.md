@@ -35,7 +35,7 @@ The following R query finds all the potentially laundering transactions from the
 suspicious <- SAML_D[SAML_D$Is_laundering == TRUE, ]
 ```
 
-The query returned 9,873 entries which were potentially suspicious. This dataset will be the focus of the analysis and subsequent queries.
+The query returned 9,873 entries which were potentially suspicious. These entries will be the focus of the analysis and subsequent queries.
 
 ## Total transaction amounts for laundering transactions over time
 
