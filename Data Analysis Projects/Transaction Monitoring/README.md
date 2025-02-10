@@ -56,7 +56,6 @@ ggplot(daily_transactions, aes(x = Date, y = TotalAmount)) +
   labs(title = "Total Transaction Amounts Over Time",
        x = "Date",
        y = "Total Transaction Amount")
-ggsave("transactions_over_time.png", width = 10, height = 6)
 ```
 ![Total Transaction Amounts Over Time](https://github.com/user-attachments/assets/2426d594-72d0-4fae-9a72-9535912aa69e)
 
@@ -73,8 +72,6 @@ ggplot(suspicious, aes(x = Amount, y = Laundering_type, fill = Laundering_type))
   theme_ridges() +
   theme(legend.position = "none") +
   scale_x_log10(labels = scales::dollar_format())
-
-ggsave("laundering_type_ridgeline.png", width = 12, height = 8)
 ```
 
 ![Distribution Of Transaction Amounts Laundering Type](https://github.com/user-attachments/assets/766320f4-cb38-4e61-8eb0-f098615a0885)
