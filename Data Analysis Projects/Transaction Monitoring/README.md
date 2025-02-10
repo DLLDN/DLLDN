@@ -59,6 +59,8 @@ ggplot(daily_transactions, aes(x = Date, y = TotalAmount)) +
 ```
 ![Total Transaction Amounts Over Time](https://github.com/user-attachments/assets/2426d594-72d0-4fae-9a72-9535912aa69e)
 
+The graph shows various spikes in transaction amounts 
+
 ## Distribution of Transaction Amounts by Laundering Type
 
 ```r
