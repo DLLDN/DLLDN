@@ -40,6 +40,7 @@ The query returned 9,873 entries which were potentially suspicious. This dataset
 ## Total transaction amounts for laundering transactions over time
 
 The following query creates an line chart in R showing the total transaction amounts for laundering transactions over time:- 
+
 ```r
 library(ggplot2)
 
@@ -59,9 +60,11 @@ ggplot(daily_transactions, aes(x = Date, y = TotalAmount)) +
 ```
 ![Total Transaction Amounts Over Time](https://github.com/user-attachments/assets/2426d594-72d0-4fae-9a72-9535912aa69e)
 
-The graph shows various spikes in transaction amounts 
+The line graph shows various spikes in total transaction amounts of over $10 million in the later part of 2022, and also in June to July 2023. 
 
 ## Distribution of Transaction Amounts by Laundering Type
+
+The following query creates a ridgeline chart in R of the distribution of transaction amounts by laundering type:- 
 
 ```r
 library(ggplot2)
@@ -80,7 +83,11 @@ ggplot(suspicious, aes(x = Amount, y = Laundering_type, fill = Laundering_type))
 
 ![Distribution Of Transaction Amounts Laundering Type](https://github.com/user-attachments/assets/766320f4-cb38-4e61-8eb0-f098615a0885)
 
-## Frequenct of Different Laundering Types
+The ridgeline chart shows that there are a number of structuring transactions around the $10,000 mark, with Over-invoicing accounting for the largest transactions of $1,000,000. Cash wihdrawals account for the lowest transaction amounts, with many being just over $100.
+
+## Frequency of Different Laundering Types
+
+The following query creates a vertical bar chart in R showing the frequency of different laundering types:- 
 
 ```r
 library(ggplot2)
@@ -93,7 +100,11 @@ ggplot(type_counts, aes(x = reorder(Laundering_type, -N), y = N)) +
 
 ![Frequency Of Different Laundering Types](https://github.com/user-attachments/assets/e24b4b4a-cfad-4a78-bc51-2cf13f0145e7)
 
+The horizontal bar chart shows that structuring are the most frequent transactions with over 1,500 transactions and over-invoicing being the least frequent transactions, with well below 250 transactions. 
+
 ## Distribution of Transaction Amounts by Payment Type
+
+The following query creates a violin chart in R showing the distribution of transaction amounts by payment type:- 
 
 ```r
 library(ggplot2)
@@ -118,5 +129,5 @@ ggplot(suspicious, aes(x = Payment_type, y = Amount, fill = Payment_type)) +
 
 ![Distribution Of Transaction Amounts Payment Type](https://github.com/user-attachments/assets/3a8d49b3-6662-4004-9c65-1a507e35a9d4)
 
-
+The violin chart shows a fairly even spread betweeen Automated Chequeing House (ACH), Cheque, Credit Card, Cross-Border and Debit Card payment types for the transactions, with many of those payment types just over the $10,000.
 
