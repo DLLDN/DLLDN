@@ -1,6 +1,6 @@
 # Project Objective
 
-This Data Analyst project focuses on transaction monitoring analysis of suspicious money laundering transactions. The objective of the project is to use R queries to find potentially laundering transactions and establish patterns and types of money laundering in the dataset. The dataset used is a simulated transaction monitoring dataset and can be found here on [Kaggle](https://www.kaggle.com/datasets/berkanoztas/synthetic-transaction-monitoring-dataset-aml) with the full paper reference in the reference md file.   
+This data analysis project focuses on transaction monitoring analysis of suspicious money laundering transactions. The objective of the project is to use R queries to find potential money laundering transactions and establish patterns and types of money laundering in a simulated anti-money laundering dataset. The dataset used is a simulated transaction monitoring dataset and can be found here on [Kaggle](https://www.kaggle.com/datasets/berkanoztas/synthetic-transaction-monitoring-dataset-aml) with the full paper reference for this simulated dataset creation in the paper reference md file.   
 
 ## Dataset
 
