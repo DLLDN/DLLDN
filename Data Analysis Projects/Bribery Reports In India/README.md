@@ -14,7 +14,13 @@ The analysis will delve deeper into the bribery reporting in different Indian st
 
 ## Research Questions
 
-The following questions will be used 
+The following questions will be used as part of this analysis:-
+
+- What are the top 5 states by number of bribery complaints?
+- What are the top 5 locations by average views?
+- What are the top 5 states by average views?
+- What are the top 5 departmenrs by average views?
+- What are the top 5 locations by bribe amount range frequency?
 
 ## Research
 
@@ -24,8 +30,6 @@ bribery_reports = pd.read_csv('bribery_reporting.csv')
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-#Query 1
-# Assuming bribery_reports is your DataFrame
 result = bribery_reports['State'].value_counts().reset_index().head(5)
 result.columns = ['State', 'ComplaintCount']
 
