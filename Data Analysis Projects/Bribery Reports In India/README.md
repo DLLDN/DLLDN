@@ -35,6 +35,8 @@ The following questions will be used as part of this analysis:-
 
 ## Top 5 states by number of bribery complaints
 
+The following python query returns a pie chart showing the top 5 states by number of complaints:-
+
 ```python
 import pandas as pd
 bribery_reports = pd.read_csv('bribery_reporting.csv')
@@ -51,6 +53,8 @@ plt.axis('equal')
 plt.show()
 ```
 ![Top 5 States by Number of Complaints](https://github.com/user-attachments/assets/9b31cdbf-f21f-40d0-ba28-2b6633b1a763)
+
+The pie chart shows that Karnataka is the most popular top 5 state for bribery complaints, with 39.9%, and Delhi was the least popular top 5 entry with 10.1%.
 
 ## Top 5 locations by average views
 
