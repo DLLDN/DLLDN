@@ -12,6 +12,17 @@ India was ranked 86 out of 180 countries in Transparency International’s (TI) 
 
 The analysis will delve deeper into the bribery reporting in different Indian states.
 
+## Dataset
+
+This dataset contains information about the bribes taken from public.
+
+**Title** : The title of the complaint posted by citizens.
+**Date** : The Date when the complaint was posted.
+**Location** : Location where the incident took place.
+**Department** : The department which took bribery.
+**Views** : Views of posted complaint.
+**Amount(INR)** : The Amount taken as bribery in Indian Rupees.
+
 ## Research Questions
 
 The following questions will be used as part of this analysis:-
@@ -19,10 +30,10 @@ The following questions will be used as part of this analysis:-
 - What are the top 5 states by number of bribery complaints?
 - What are the top 5 locations by average views?
 - What are the top 5 states by average views?
-- What are the top 5 departmenrs by average views?
+- What are the top 5 departments by average views?
 - What are the top 5 locations by bribe amount range frequency?
 
-## Research
+## Top 5 states by number of bribery complaints
 
 ```python
 import pandas as pd
@@ -36,10 +47,12 @@ result.columns = ['State', 'ComplaintCount']
 plt.figure(figsize=(8, 8))
 plt.pie(result['ComplaintCount'], labels=result['State'], autopct='%1.1f%%', startangle=140, colors=['orange', 'lightblue', 'green', 'red', 'purple'])
 plt.title('Top 5 States by Number of Complaints')
-plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+plt.axis('equal')  
 plt.show()
 ```
 ![Top 5 States by Number of Complaints](https://github.com/user-attachments/assets/9b31cdbf-f21f-40d0-ba28-2b6633b1a763)
+
+## Top 5 locations by average views
 
 ```python
 result = bribery_reports.groupby('Exact Location').agg(
@@ -57,6 +70,8 @@ plt.show()
 ```
 ![Top 5 Locations by Average Views](https://github.com/user-attachments/assets/d74d129a-82fb-4879-a962-5ec615ab404f)
 
+## Top 5 states by average views
+
 ```python
 result = bribery_reports.groupby('State').agg(
     AvgViews=('Views', 'mean')
@@ -73,6 +88,8 @@ plt.show()
 ```
 ![Top Five States by Average Views](https://github.com/user-attachments/assets/bac7657e-f6e5-4a08-9b12-4e4392e200ff)
 
+## Top 5 departments by average views
+
 ```python
 result = bribery_reports.groupby('Department').agg(
     AvgViews=('Views', 'mean')
@@ -87,6 +104,8 @@ plt.tight_layout()
 plt.show()
 ```
 ![Top 5 Departments by Average Views](https://github.com/user-attachments/assets/66ed3273-e4d5-4c5c-9cc8-84a0e10d01f0)
+
+## Top 5 locations by bribe amount range frequency
 
 ```python
 bribery_reports['BribeRange'] = pd.cut(bribery_reports['Amount'], 
