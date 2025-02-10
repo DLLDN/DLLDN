@@ -59,6 +59,8 @@ ggplot(daily_transactions, aes(x = Date, y = TotalAmount)) +
 ```
 ![Total Transaction Amounts Over Time](https://github.com/user-attachments/assets/2426d594-72d0-4fae-9a72-9535912aa69e)
 
+## Distribution of Transaction Amounts by Laundering Type
+
 ```r
 library(ggplot2)
 library(ggridges)
@@ -76,6 +78,8 @@ ggplot(suspicious, aes(x = Amount, y = Laundering_type, fill = Laundering_type))
 
 ![Distribution Of Transaction Amounts Laundering Type](https://github.com/user-attachments/assets/766320f4-cb38-4e61-8eb0-f098615a0885)
 
+## Frequenct of Different Laundering Types
+
 ```r
 library(ggplot2)
 
@@ -86,6 +90,8 @@ ggplot(type_counts, aes(x = reorder(Laundering_type, -N), y = N)) +
 ```
 
 ![Frequency Of Different Laundering Types](https://github.com/user-attachments/assets/e24b4b4a-cfad-4a78-bc51-2cf13f0145e7)
+
+## Distribution of Transaction Amounts by Payment Type
 
 ```r
 library(ggplot2)
