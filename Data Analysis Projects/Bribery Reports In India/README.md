@@ -16,11 +16,11 @@ The analysis will delve deeper into the bribery reporting in different Indian st
 
 This dataset contains information about the bribes taken from public.
 
-**Title** : The title of the complaint posted by citizens.
-**Date** : The Date when the complaint was posted.
-**Location** : Location where the incident took place.
-**Department** : The department which took bribery.
-**Views** : Views of posted complaint.
+- **Title** : The title of the complaint posted by citizens.
+- **Date** : The Date when the complaint was posted.
+- **Location** : Location where the incident took place.
+- **Department** : The department which took bribery.
+- **Views** : Views of posted complaint.
 **Amount(INR)** : The Amount taken as bribery in Indian Rupees.
 
 ## Research Questions
