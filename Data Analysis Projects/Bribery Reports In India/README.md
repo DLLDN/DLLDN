@@ -58,6 +58,8 @@ The pie chart shows that Karnataka is the most popular top 5 state for bribery c
 
 ## Top 5 locations by average views
 
+The following python query creates a bar chart showing the top 5 locations by average views:-
+
 ```python
 result = bribery_reports.groupby('Exact Location').agg(
     AvgViews=('Views', 'mean')
@@ -73,6 +75,8 @@ plt.tight_layout()
 plt.show()
 ```
 ![Top 5 Locations by Average Views](https://github.com/user-attachments/assets/d74d129a-82fb-4879-a962-5ec615ab404f)
+
+The bar chart shows that no location was given an averge of 12,000 complaints, and Sant Ravidas Nagar Bhadohi is the least popular in the top 5 with average complaints of 6,000.
 
 ## Top 5 states by average views
 
