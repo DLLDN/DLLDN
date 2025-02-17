@@ -1,6 +1,6 @@
 ## Project Objective
 
-This Data Analyst project focuses on cluster analysis of a dataset relating to Bribery Reports in India between 2015 to 2022, which can be found on this Kaggle link. 
+This data analysis project focuses on cluster analysis using Python queries. The dataset relates to Bribery Reports in India between 2015 to 2022, which can be found on this Kaggle link. 
 
 ## Bribery
 
@@ -76,7 +76,7 @@ plt.show()
 ```
 ![Top 5 Locations by Average Views](https://github.com/user-attachments/assets/d74d129a-82fb-4879-a962-5ec615ab404f)
 
-The bar chart shows that no location was given an averge of 12,000 complaints, and Sant Ravidas Nagar Bhadohi is the least popular in the top 5 with average complaints of 6,000.
+The bar chart shows that no location was given an average of 12,000 complaints views, and Sant Ravidas Nagar Bhadohi is the least popular in the top 5 with average complaints of 6,000.
 
 ## Top 5 states by average views
 
@@ -96,6 +96,8 @@ plt.show()
 ```
 ![Top Five States by Average Views](https://github.com/user-attachments/assets/bac7657e-f6e5-4a08-9b12-4e4392e200ff)
 
+The bar chart shows that no location was given an average of 12,000 complaints views, and Sant Ravidas Nagar Bhadohi is the least popular in the top 5 with average complaints of 6,000.
+
 ## Top 5 departments by average views
 
 ```python
@@ -112,6 +114,8 @@ plt.tight_layout()
 plt.show()
 ```
 ![Top 5 Departments by Average Views](https://github.com/user-attachments/assets/66ed3273-e4d5-4c5c-9cc8-84a0e10d01f0)
+
+The bar chart shows that no location was given an average of 12,000 complaints views, and Sant Ravidas Nagar Bhadohi is the least popular in the top 5 with average complaints of 6,000.
 
 ## Top 5 locations by bribe amount range frequency
 
@@ -131,3 +135,5 @@ plt.tight_layout()
 plt.show()
 ```
 ![Top 5 Locations by Bribe Amount Range Frequency](https://github.com/user-attachments/assets/62f3fefd-986a-4f8a-8b31-03bd0a1e9ca7)
+
+The bar chart shows that no location was given an average of 12,000 complaints views, and Sant Ravidas Nagar Bhadohi is the least popular in the top 5 with average complaints of 6,000.
