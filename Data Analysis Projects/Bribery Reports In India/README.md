@@ -80,6 +80,8 @@ The bar chart shows that no location was given an average of 12,000 complaints v
 
 ## Top 5 states by average views
 
+The following python query creates a line graph showing the top 5 states by average views:-
+
 ```python
 result = bribery_reports.groupby('State').agg(
     AvgViews=('Views', 'mean')
@@ -96,9 +98,11 @@ plt.show()
 ```
 ![Top Five States by Average Views](https://github.com/user-attachments/assets/bac7657e-f6e5-4a08-9b12-4e4392e200ff)
 
-The bar chart shows that no location was given an average of 12,000 complaints views, and Sant Ravidas Nagar Bhadohi is the least popular in the top 5 with average complaints of 6,000.
+The line graph shows that Changidath was giving an average of nearly 4,800 complaints views, and Assam was the least popular in the top 5 with average complaints of 3,800.
 
 ## Top 5 departments by average views
+
+The following python query creates a bar chart showing the top 5 departments by average views:-
 
 ```python
 result = bribery_reports.groupby('Department').agg(
@@ -115,9 +119,11 @@ plt.show()
 ```
 ![Top 5 Departments by Average Views](https://github.com/user-attachments/assets/66ed3273-e4d5-4c5c-9cc8-84a0e10d01f0)
 
-The bar chart shows that no location was given an average of 12,000 complaints views, and Sant Ravidas Nagar Bhadohi is the least popular in the top 5 with average complaints of 6,000.
+The bar chart shows that favourable judgement was the most popular department, given an average of over 8,000 complaints views, and filing petition department was the least popular in the top 5 with average complaints of just over 7,000.
 
 ## Top 5 locations by bribe amount range frequency
+
+The following python query creates a heat map showing the top 5 locations by bribe amount range frquency:-
 
 ```python
 bribery_reports['BribeRange'] = pd.cut(bribery_reports['Amount'], 
@@ -136,4 +142,4 @@ plt.show()
 ```
 ![Top 5 Locations by Bribe Amount Range Frequency](https://github.com/user-attachments/assets/62f3fefd-986a-4f8a-8b31-03bd0a1e9ca7)
 
-The bar chart shows that no location was given an average of 12,000 complaints views, and Sant Ravidas Nagar Bhadohi is the least popular in the top 5 with average complaints of 6,000.
+The heat map shows that Bangalore is the most popular place with over 400 low bribe reports and 223 high bribe reports, and Pune being the lowest entry in the top 5 with 78 low bribe reports and 14 high bribe reports. 
