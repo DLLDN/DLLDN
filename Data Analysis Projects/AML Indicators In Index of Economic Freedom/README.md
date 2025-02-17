@@ -210,13 +210,13 @@ The pie chart shows that Sub-Saharan Africa has the highest percentage with 48.7
 
 # Summary and Findings
 
-The analysis performed shows that AML indicators are bringing down the IEF averages for most countries around the world, and this is a concerning issue. 
+The analysis performed shows that AML indicators are bringing down the IEF averages for most countries around the world, and this is a concerning issue. Despite having laws and institutions largely compliant with recommendations, many jurisdictions struggle with the practical implementation and effectiveness of their AML measures.
 
-Financial Freedom poses the biggest barrier for the highest risk countries, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. 
+Financial Freedom poses the biggest barrier for the highest risk countries, and may suggest that these countries have poor banking efficiency and that illicit financing is more prevalent. The lack of robust financial controls and oversight in these countries makes them attractive for money launderers and terrorist financiers. These countries often struggle to harmonize their domestic regulations with international AML standards. This misalignment creates loopholes that can be exploited by money launderers.
 
-Countries that perform well above the IEF average but below the AML average have major shortcomings in judicial effectiveness, and suggests regulatory procedures and AML legislation is severely lacking. However, as these countries perform good overall on the IEF, it offers scope and encouragement that AML measures can be improved. 
+Countries that perform well above the IEF average but below the AML average have major shortcomings in judicial effectiveness, and suggests regulatory procedures and AML legislation is severely lacking. However, as these countries perform good overall on the IEF, it offers scope and encouragement that AML measures can be improved. Countries with strong economies are often better positioned to invest in new technologies and approaches to enhance their AML efforts. These countries may have established international relationships that can be leveraged to improve AML practices through knowledge sharing and mutual assistance. 
 
-It is evidently clear that Sub-Saharan Africa is frought with potential ML issues, for both the number of countries performing below the average AML score and the percentage being high-risk. It would be a very challenging task to enforce and improve AML measures in that part of the world.  
+It is evidently clear that Sub-Saharan Africa is frought with potential ML issues, for both the number of countries performing below the average AML score and the percentage being high-risk. Many countries in the region struggle with weak AML frameworks, widespread corruption, insufficient enforcement mechanisms, limited resources, political instability, and high levels of informal economies. Grey-listing has severe implications for these economies, including a substantial decline in capital inflows and foreign direct investment. It would be a very challenging task to enforce and improve AML measures in that part of the world.  
 
 # Changes to dataset and data license
 
