@@ -1,6 +1,6 @@
 # Project Objective
 
-This data analysis project focuses on an explorative study of the UK Sanctions List website dataset using Tableau for Visualisations. 
+This data analysis project focuses on an explorative study of the UK Sanctions List website dataset using Tableau for visualisations. 
 
 # The UK Sanctions List
 
