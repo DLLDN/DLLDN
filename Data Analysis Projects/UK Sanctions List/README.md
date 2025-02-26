@@ -4,7 +4,7 @@ This data analysis project focuses on an explorative study of the UK Sanctions L
 
 # The UK Sanctions List
 
-The UK Sanctions List website provides details of individuals, entities, and ships designated under regulations made under the Sanctions and Anti-Money Laundering Act 2018. it indicates which sanctions measures apply to these designated persons or ships. The details of the UK Sanctions List are free to use in the public domain. 
+The UK Sanctions List website provides details of individuals, entities, and ships designated under regulations made under the Sanctions and Anti-Money Laundering Act 2018. it indicates which sanctions measures apply to these designated persons or ships. The details of the UK Sanctions List are free to use in the public domain and can be found [here](https://search-uk-sanctions-list.service.gov.uk/)
 
 ## Dataset
 
