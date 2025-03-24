@@ -1,4 +1,4 @@
-- I work in Compliance and Anti-Money Laundering, completing a variety of AML related projects
+- I work in Compliance and Anti-Money Laundering (AML), and have completed a variety of AML related projects
 - Working with SQL, Python, R and Tableau
 - ICA Advanced AML certified, CompTIA Data+ certified and BCS Business Analysis certified
 - See project folder for recent projects
